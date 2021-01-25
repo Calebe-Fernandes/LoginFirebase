@@ -1,8 +1,8 @@
 import React from 'react'
-
+import SignUp from './components/signUp'
 function App() {
   return (
-    <h1>Hello Worrld</h1>
+    <SignUp/>
   );
 }
 
