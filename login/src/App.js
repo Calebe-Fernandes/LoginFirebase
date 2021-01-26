@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container} from 'react-bootstrap'
 import {AuthProvider} from './context/authContext'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Dashboard from './components/dashboard'
+import Login from './components/login'
 
 
 
@@ -16,7 +18,9 @@ function App() {
           <Router>
             <AuthProvider>
                 <Switch>
+                  <Route exact path = '/' component = {Dashboard} />
                   <Route path = '/signup' component = {SignUp} />
+                  <Route path = '/login' component = {Login} />
                 </Switch>
             </AuthProvider>
           </Router>
