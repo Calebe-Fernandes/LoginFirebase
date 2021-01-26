@@ -24,7 +24,8 @@ async function handleSubmit(e){
         setLoading(true)
         await  signup(emailRef.current.value, passwordRef.current.value)
     }catch{
-        setError('failed to create an account')
+        setError('Falha ao criar a conta')
+        setLoading(false)
     }
 }
 
